@@ -1,0 +1,2 @@
+- https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world
+- id: idRichContext_DisplaySign - this box's inner html contains the code
