@@ -3,7 +3,6 @@
 // to get data
 export function getData(key, callback) {
     chrome.storage.local.get(key, (data) => {
-        console.log(data[key])
         callback(data[key] || "");
     });
 }
