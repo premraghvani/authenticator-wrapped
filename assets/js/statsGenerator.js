@@ -29,6 +29,10 @@ export function logsParser(callback){
 
 export function statisticsGenerator(callback){
     logsParser((data)=>{
+        let finalReturnData = {};
+
+        finalReturnData = data; // TEMPORARY - remove this - this is just for my own testing - PR
+        
         /* INPUT: an array of objects as "data", with for example:
         [
             {
@@ -43,6 +47,6 @@ export function statisticsGenerator(callback){
 
         Return: feel free to do somet in JSON
         */
-        callback(data || {})
+        callback(finalReturnData || {})
     });
 }
