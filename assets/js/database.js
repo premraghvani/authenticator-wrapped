@@ -2,14 +2,20 @@
 
 // to get data
 export function getData(key, callback) {
-    chrome.storage.local.get(key, (data) => {
+    if (typeof browser === "undefined") {
+        var browser = chrome;
+    }
+    browser.storage.local.get(key, (data) => {
         callback(data[key] || "");
     });
 }
 
 // to set data
 export function setData(key, data) {
-    chrome.storage.local.set({ [key]: data });
+    if (typeof browser === "undefined") {
+        var browser = chrome;
+    }
+    browser.storage.local.set({ [key]: data });
 }
 
 // to append data

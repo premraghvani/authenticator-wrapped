@@ -5,7 +5,8 @@
   "manifest_version": 3,
   "background": {
       "service_worker": "/assets/js/background.js",
-      "type": "module"
+      "type": "module",
+      "scripts":["/assets/js/background.js"]
   },
   "action": {
       "default_popup": "/assets/html/popup.html",

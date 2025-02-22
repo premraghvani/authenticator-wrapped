@@ -1,4 +1,4 @@
-import { getData } from "./databaseChrome.js";
+import { getData } from "./database.js";
 
 // function which parses the logs
 export function logsParser(callback){

@@ -1,7 +1,10 @@
-import { appendData, getData } from "./databaseChrome.js";
+import { appendData, getData } from "./database.js";
 import { statisticsGenerator } from "./statsGenerator.js";
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+if (typeof browser === "undefined") {
+    var browser = chrome;
+}
+browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "appendData") {
         appendData(request.key, request.data);
         sendResponse("Success");
