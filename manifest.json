@@ -14,7 +14,7 @@
   },
   "content_scripts": [
       {
-          "matches": ["https://login.microsoftonline.com/common/oauth2/*"],
+          "matches": ["*://*.microsoftonline.com/*"],
           "js": ["/assets/js/tracker.js"]
       }
   ],
