@@ -11,14 +11,29 @@ browser.runtime.sendMessage({ action: "statisticsGenerator" })
 
         if (response) {
             // Format and display the response
-            respElement.textContent = JSON.stringify(response, null, 2);
+            respElement.innerHTML = `
+                <p>Total Sign Ins</p>
+                <span>${response.TotalNumberOfSignINs}</span>
+
+                <p>Past 24 Hours</p>
+                <span>${response.NumberOfTwentyFourHourSignIns}</span>
+
+                <p>Past 7 Days</p>
+                <span>${response.NumberOfWeekSignIns}</span>
+
+                <p>Number of Failures</p>
+                <span>${response.NumberOfTOs + response.NumberOfDNs}</span>
+
+                <p>Most Common Code</p>
+                <span>${response.MostCommonCode}</span>
+            `;
             respElement.classList.remove("loading"); // Remove loading class
         } else {
-            respElement.textContent = "No data received.";
+            respElement.textContent = "No data received :(";
         }
     })
     .catch(error => {
         // Handle errors
         console.error("Error fetching statistics:", error);
-        document.getElementById("resp").textContent = "Failed to load statistics.";
+        document.getElementById("resp").textContent = "Failed to load statistics :(";
     });

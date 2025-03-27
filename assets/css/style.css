@@ -4,19 +4,18 @@
 }
 body{
     height: 100vh;
+    min-height: 370px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, #7e317b, #321f20);
 }
 .pop-up{
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    border: 1px solid black;
     width: 250px;
     padding: 10px;
-    background: linear-gradient(135deg, #f3f099, #ec9197);
-    border-radius: 8px;
 }
 h1 {
     font-size: 18px;
@@ -33,4 +32,35 @@ h1 {
 .loading {
     font-style: italic;
     color: gray;
+}
+.contributors{
+    color: white;
+    margin-top: 3px;
+    font-size: smaller;
+}
+.contributorsLink{
+    color: white;
+}
+.contributorsLink:hover{
+    color: pink
+}
+
+#resp {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#resp p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#resp span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
 }

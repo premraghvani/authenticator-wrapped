@@ -12,5 +12,5 @@ Inspired by [Durfess #37281](https://www.facebook.com/hashtag/durfess37281), why
 
 Of course, this project could not be done without any help! Thanks to:
 
-- @JDavenport426 - for the help in statistics generation
-- @Aman07122003 - for the help in making the browser extension popup look better
+- [James Davenport, @JDavenport426](https://github.com/JDavenport426) - for the help in statistics generation
+- [Aman Pratap Singh, @Aman07122003](https://github.com/Aman07122003) - for the help in making the browser extension popup look better
