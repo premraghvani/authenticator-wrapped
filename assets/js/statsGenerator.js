@@ -33,9 +33,17 @@ export function statisticsGenerator(callback){
         const currentDay = new Date()       // gets the current time to compare to
 
         let NoOfValidSignIns = 0            // This chunk of code gets the amount of valid sign-ins
+        let eachNumberAppearance = {} // finds how many times each number is put in
         for (let i = 0; i < data.length; i++) {
             if (!(isNaN(data[i].code))) {
                 NoOfValidSignIns += 1
+
+                let code = data[i].code
+                if(eachNumberAppearance[code] == undefined){
+                    eachNumberAppearance[code] = 1;
+                } else {
+                    eachNumberAppearance[code] += 1;
+                }
             }
         }
 
@@ -95,6 +103,7 @@ export function statisticsGenerator(callback){
             "NumberOfTOs": TOs,
             "NumberOfDNs": DNs,
             "MostCommonCode": maxCode,
+            "EachAppearance":eachNumberAppearance,
             "data": data
         }
         

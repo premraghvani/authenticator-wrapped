@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: block;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #7e317b, black);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+.extendedData{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.contributors{
+    color: white;
+    margin-top: 3px;
+    font-size: smaller;
+    text-align: center;
+}
+.contributorsLink{
+    color: white;
+}
+.contributorsLink:hover{
+    color: #a04da0
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+#eachAppearance{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 5px;
+    width: 100%;
+}
+
+.block {
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.block:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.block h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: lighter;
+    color: gray;
+}
+.block p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0 0;
+    color: black
+}

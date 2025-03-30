@@ -16,7 +16,7 @@ Firefox: [https://addons.mozilla.org/en-GB/firefox/addon/authenticator-wrapped/]
 
 ### Manual Installation (Chrome) ### 
 
-1. Download "currentVersion.zip"
+1. Download `currentVersion.zip`
 
 2. Unzip it into a folder on your computer that you will not delete
 

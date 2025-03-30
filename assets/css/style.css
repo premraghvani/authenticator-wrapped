@@ -2,14 +2,14 @@
     padding: 0;
     margin: 0;
 }
-body{
+body {
     height: 100vh;
-    min-height: 370px;
+    min-height: 620px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #7e317b, #321f20);
+    background: linear-gradient(135deg, #7e317b, black);
 }
 .pop-up{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -42,25 +42,50 @@ h1 {
     color: white;
 }
 .contributorsLink:hover{
-    color: pink
+    color: #a04da0
 }
 
 #resp {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-#resp p {
+.block {
+    background: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.block h3 {
     margin: 0;
     font-size: 14px;
-    color: #555;
+    font-weight: lighter;
+    color: #666;
+}
+.block p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0 0;
 }
 
-#resp span {
-    font-size: 20px;
-    font-weight: bold;
-    color: #222;
+#openBigData {
+    background: white;
+    color: #7e317b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+#openBigData:hover {
+    background: #7e317b;
+    color: white
 }
