@@ -12,7 +12,7 @@ Inspired by [Durfess #37281](https://www.facebook.com/hashtag/durfess37281), why
 
 Chrome Web Store: Pending (it costs money for some reason :/)
 
-Firefox: Pending
+Firefox: [https://addons.mozilla.org/en-GB/firefox/addon/authenticator-wrapped/](https://addons.mozilla.org/en-GB/firefox/addon/authenticator-wrapped/)
 
 ### Manual Installation (Chrome) ### 
 
