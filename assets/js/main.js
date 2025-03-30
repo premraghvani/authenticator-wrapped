@@ -14,6 +14,7 @@ browser.runtime.sendMessage({ action: "statisticsGenerator" })
             document.getElementById("stat04").innerHTML = response.NumberOfDNs
             document.getElementById("stat05").innerHTML = response.NumberOfTOs
             document.getElementById("stat06").innerHTML = response.MostCommonCode
+            document.getElementById("stat07").innerHTML = response.TotalNumberOfSignINs - response.NumberOfDNs - response.NumberOfTOs
 
             // for each number's appearance
             const numbox = document.getElementById("eachAppearance");

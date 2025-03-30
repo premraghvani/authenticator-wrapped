@@ -13,7 +13,7 @@ browser.runtime.sendMessage({ action: "statisticsGenerator" })
             // Format and display the response
             respElement.innerHTML = `
                     <div class="block">
-                        <h3>Total Successful Sign Ins</h3>
+                        <h3>Total Attempts</h3>
                         <p>${response.TotalNumberOfSignINs}</p>
                     </div>
                     <div class="block">
