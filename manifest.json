@@ -1,7 +1,7 @@
 {
     "name": "Authenticator Wrapped",
     "description": "Statistics on your Microsoft Authenticator successes (and failures)",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "manifest_version": 3,
     "background": {
         "service_worker": "/assets/js/background.js",
@@ -25,7 +25,7 @@
         }
     ],
     "permissions": [
-        "storage", "tabs"
+        "storage"
     ],
     "browser_specific_settings": {
         "gecko": {
