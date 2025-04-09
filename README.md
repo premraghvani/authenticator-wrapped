@@ -10,11 +10,11 @@ Inspired by [Durfess #37281](https://www.facebook.com/hashtag/durfess37281), why
 
 ## Installation ##
 
-Chrome Web Store: Pending (it costs money for some reason :/)
+**Chrome Web Store**: [https://chromewebstore.google.com/detail/authenticator-wrapped/bihkggifnanngdcdobeacdkjbhaoijjk](https://chromewebstore.google.com/detail/authenticator-wrapped/bihkggifnanngdcdobeacdkjbhaoijjk)
 
-Firefox: [https://addons.mozilla.org/en-GB/firefox/addon/authenticator-wrapped/](https://addons.mozilla.org/en-GB/firefox/addon/authenticator-wrapped/)
+**Firefox**: [https://addons.mozilla.org/en-GB/firefox/addon/authenticator-wrapped/](https://addons.mozilla.org/en-GB/firefox/addon/authenticator-wrapped/)
 
-### Manual Installation (Chrome) ### 
+### Manual Installation (Chrome, Not Recommended!!) ### 
 
 1. Download `currentVersion.zip`
 
